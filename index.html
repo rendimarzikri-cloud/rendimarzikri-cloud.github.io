@@ -56,6 +56,8 @@
       font-family: system-ui, Arial, sans-serif;
       background-color: var(--bg);
       color: var(--text);
+      margin: 0;
+      padding: 0;
     }
     h1 {
       font-size: clamp(3rem, 8vw, 6rem);
@@ -68,6 +70,13 @@
     }
     h2 {
       color: var(--text-secondary);
+    }
+    section {
+      padding: 8.2px;
+    }
+    .section {
+      padding: 8.2px;
+      background: var(--bg-secondary);
     }
     .card-grid {
       display: grid;
@@ -93,21 +102,58 @@
         max-width: 700px;
       }
     }
+    .button {
+      background: var(--button-bg);
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .button > a {
+      text-decoration: none;
+      color: var(--button-text);
+    }
+    .button:hover {
+      background: var(--button-hover);
+    }
+    .button:active {
+      background: var(--button-active);
+    }
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
   </style>
 </head>
 <body>
-  <h1>Rendi Marzikri - Cloud</h1>
-  <div class="card-grid">
-    <div class="card">
-      <h2><i class="fa-solid fa-circle-question"></i></h2>
-      <h3>Siapa Rendi Marzikri</h3>
-      <p>Rendi Marzikri adalah seorang konten kreator dan seorang programmer asal Indonesia.</p>
+  <section>
+    <h1>Rendi Marzikri - Cloud</h1>
+    <div class="card-grid">
+      <div class="card">
+        <h2><i class="fa-solid fa-circle-question"></i></h2>
+        <h3>Siapa Rendi Marzikri</h3>
+        <p>Rendi Marzikri adalah seorang konten kreator dan seorang programmer asal Indonesia.</p>
+      </div>
+      <div class="card">
+        <h2><i class="fa-solid fa-circle-question"></i></h2>
+        <h3>Apa itu Rendi Marzikri - Cloud</h3>
+        <p>Rendi Marzikri Cloud adalah halaman utama penjelasan tentang cara kerja Internet. Di sini Rendi akan menjelaskan cara kerja Internet dengan rinci dan Jelas.</p>
+      </div>
     </div>
-    <div class="card">
-      <h2><i class="fa-solid fa-circle-question"></i></h2>
-      <h3>Apa itu Rendi Marzikri - Cloud</h3>
-      <p>Rendi Marzikri Cloud adalah halaman utama penjelasan tentang cara kerja Internet. Di sini Rendi akan menjelaskan cara kerja Internet dengan rinci dan Jelas.</p>
+  </section>
+  <div class="section">
+    <div class="card-grid">
+      <div class="card">
+        <h3>Apa itu Internet</h3>
+        <p>Baca selengkapnya tentang apa itu Internet.</p>
+        <div class="button">
+          <a href="/internet">Baca selengkapnya</a>
+        </div>
+      </div>
     </div>
   </div>
+  <footer>
+    &copy; Rendi Marzikri | <a href="https://rendimarzikri.qzz.io">Rendi Marzikri Force</a>
+  </footer>
 </body>
 </html>
